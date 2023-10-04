@@ -1,16 +1,15 @@
 namespace Subjects {
-  // teacher interface
+  // Teacher interface
   export interface Teacher {
-    experienceTeachingC?: number;
+    experienceTeachingReact?: number;
   }
-  // Class
-  export class Cpp extends Subject {
+  // Class React
+  export class React extends Subject {
     getRequirements(): string {
-      return "Here is the list of requirements for Cpp";
+      return "Here is the list of requirements for React";
     }
-
     getAvailableTeacher(): string {
-      if (!this.teacher.experienceTeachingC) {
+      if (!this.teacher.experienceTeachingReact) {
         return "No available teacher";
       }
       return `Available Teacher: ${this.teacher.firstName}`;
